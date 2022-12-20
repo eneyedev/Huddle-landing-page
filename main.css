@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    background: var(--violet);
+    padding: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.none-mobile {
+    display: none;
+}
+
+.header img {
+    width: 160px;
+}
+
+.illustration {
+    background: url("img/bg-mobile.svg");
+    margin-top: 3rem;
+}
+
+.illustration img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.text {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.h-text {
+    font-weight: 600;
+    color: white;
+    font-size: 30px;
+}
+
+.text p {
+    color: white;
+    margin-top: 1rem;
+    font-size: 16px;
+    font-weight: 350;
+    margin-bottom: 2rem;
+}
+
+.text button {
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    background: white;
+    border: none;
+    outline: none;
+    color: var(--violet);
+    cursor: pointer;
+    width: 50%;
+    font-size: 15px;
+    border-radius: 5rem;
+}
+
+.text button:hover {
+    background: var(--soft-magenta);
+    color: white;
+}
+
+.footer {
+    margin-top: 5rem;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media screen and (min-width: 1022px) {
+
+
+    .main {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        margin-top: 5rem;
+    }
+
+    .illustration {
+        width: 1000px;
+    }
+
+    .text {
+        text-align: left;
+    }
+
+    .text button {
+        justify-content: left;
+        margin: 0;
+        width: 30%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
